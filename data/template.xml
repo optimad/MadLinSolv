@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <MadLinSolv website="">
+    <Solver>
+      <debug>...true/false...</debug>                             --> it controls the PETSc log_summary options and the PETSc true residuals print
+    </Solver>
+    <Matrix>
+      <directory>...matrix folder...</directory>                  --> it controls the input folder for matrix file
+      <name>...matrix file name...</name>                         --> it controls matrix file name
+      <appendix>...matrix extension...</appendix>                 --> it controls matrix extension
+    </Matrix>
+    <RHS>
+      <directory>...right-hand side folder...</directory>         --> it controls the input folder for right-hand side file
+      <name>...right-hand side file name...</name>                --> it controls right-hand side file name
+      <appendix>...right-hand side extension</appendix>           --> it controls right-hand side extension
+    </RHS>
+    <InitialSolution>
+      <haveIt>...true/false...</haveIt>                           --> it controls if the user wants to provide an initial guess for the solution
+      <directory>...initial solution guess folder...</directory>  --> it controls the input folder for initial solution guess file
+      <name>...initial solution guess name...</name>              --> it controls the initial solution guess file name
+      <appendix>...initial solution guess extension...</appendix> --> it controls the initial solution guess extension
+    </InitialSolution>
+    <Dump>
+      <on>...true/false...</on>                                   --> it controls if the user wants to print matrix, right-hand side and solution file
+      <directory>...dump folder...</directory>                    --> it controls the output folder for matrix, right-hand side and solution file
+      <name>...dump name...</name>                                --> it controls the dump files prefix (outputs are [dump name]matrix.txt, [dump name]rhs.txt), [dump name]solution.txt)
+    </Dump>
+  </MadLinSolv>
+  
+  

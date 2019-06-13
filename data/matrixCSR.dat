@@ -1,0 +1,19 @@
+# Matrix in CSR format
+#========================================================
+# Comments in header start with "#"
+# Global Info in first line (global value): nRows nCols nNz
+# For each row in matrix 2 lines in file:
+# - first line: column global indices for non-zeros
+# - second line: non-zeors column values
+#========================================================
+5 5 8
+0 3
+1.000000000000e+00 6.000000000000e+00
+1
+1.050000000000e+01
+2
+0.150000000000e+00
+1 3 4
+2.505000000000e+02 2.800000000000e+02 3.332000000000e+01
+4
+1.200000000000e+01  

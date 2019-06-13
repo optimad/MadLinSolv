@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MadLinSolv website="">
+  <Solver>
+    <debug>true</debug>
+  </Solver>
+  <Matrix>
+    <directory>/home/marco/git/MadLinSolv/data</directory>
+    <name>matrixCSR</name>
+    <appendix>dat</appendix>
+  </Matrix>
+  <RHS>
+    <directory>/home/marco/git/MadLinSolv/data</directory>
+    <name>rhs</name>
+    <appendix>dat</appendix>
+  </RHS>
+  <InitialSolution>
+    <haveIt>true</haveIt>
+    <directory>/home/marco/git/MadLinSolv/data</directory>
+    <name>initialSolution</name>
+    <appendix>dat</appendix>
+  </InitialSolution>
+  <Dump>
+    <on>true</on>
+    <directory>./</directory>
+    <name>dump</name>
+  </Dump>
+</MadLinSolv>

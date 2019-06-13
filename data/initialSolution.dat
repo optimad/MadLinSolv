@@ -1,0 +1,10 @@
+# Vector file format
+# Comments in header start with "#"
+# First line: number of elements
+# From second line: elements
+5
+0.000000000000e+00
+0.000000000000e+00
+0.000000000000e+00
+0.000000000000e+00
+0.000000000000e+00

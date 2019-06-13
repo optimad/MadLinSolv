@@ -1,0 +1,8 @@
+.cproject
+.project
+.pydevproject
+.settings/
+debug*/
+release*/
+build*/
+

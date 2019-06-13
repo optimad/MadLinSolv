@@ -81,7 +81,7 @@ void RunManager::preprocess()
     log::cout() << "    Reading Dictionary..." << std::endl;
     log::cout() << "    ---------------------" << std::endl;
     //m_dictionary.readXML("../../data/dictionary.xml");
-    m_dictionary.readXMLbitpit("../../data/dictionary.xml");
+    m_dictionary.readXMLbitpit("./dictionary.xml");
 
     log::cout() << "" << std::endl;
     log::cout() << "    Initializing Solver..." << std::endl;

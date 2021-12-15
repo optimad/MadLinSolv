@@ -69,7 +69,7 @@ void RhsReader::read(std::unique_ptr<SystemSolver> & system, int expectedElement
 {
 
     log::cout() << "RHS path: " << m_fileHandler.getPath() << std::endl;
-    std::fstream inRhs(m_fileHandler.getPath().c_str(), ifstream::in);
+    std::fstream inRhs(m_fileHandler.getPath().c_str(), std::ifstream::in);
     if(inRhs.is_open()) {
         readInfo(inRhs,expectedElements);
 

@@ -65,7 +65,7 @@ MatrixReader::MatrixReader(int nProcessors, int rank,const std::string & dir_, c
 void MatrixReader::readMatrixCSRFormat(std::unique_ptr<SparseMatrix> & matrix)
 {
     log::cout() << "Matrix path: " << m_fileHandler.getPath() << std::endl;
-    std::fstream inMatrix(m_fileHandler.getPath().c_str(), ifstream::in);
+    std::fstream inMatrix(m_fileHandler.getPath().c_str(), std::ifstream::in);
     if(inMatrix.is_open()) {
         readMatrixCSRFormatInfo(inMatrix);
 

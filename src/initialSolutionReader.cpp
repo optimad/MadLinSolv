@@ -20,6 +20,8 @@
  *
  \*---------------------------------------------------------------------------*/
 
+#include <fstream>
+
 #include <bitpit_IO.hpp>
 #include <bitpit_LA.hpp>
 
@@ -70,7 +72,7 @@ void InitialSolutionReader::read(std::unique_ptr<SystemSolver> & system, int exp
 {
 
     log::cout() << "InitialSolution path: " << m_fileHandler.getPath() << std::endl;
-    std::fstream inInitialSolution(m_fileHandler.getPath().c_str(), ifstream::in);
+    std::fstream inInitialSolution(m_fileHandler.getPath().c_str(), std::ifstream::in);
     if(inInitialSolution.is_open()) {
         readInfo(inInitialSolution,expectedElements);
 

@@ -113,7 +113,7 @@ void RunManager::preprocess()
         log::cout() << "" << std::endl;
         log::cout() << "    Initializing solver..." << std::endl;
         log::cout() << "    ----------------------" << std::endl;
-        m_solver->getSystem()->initialize(*(m_solver->getMatrix()));
+        m_solver->getSystem()->assembly(*(m_solver->getMatrix()));
     }
 
     //Declare RHS reader
